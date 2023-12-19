@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: vprodb
-        image: eawangya/techharbordb:latest
+        image: javamyqslregistry.azurecr.io/javamyqslregistry
         env:
         - name: MYSQL_ROOT_PASSWORD
           value: "vprodbpass"
