@@ -124,3 +124,29 @@ spec:
   selector:
     app: vpromq01
 
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vproapp-v2
+  labels:
+    app: vproapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vproapp
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: vproapp
+        version: v2
+    spec:
+      containers:
+      - name: vproapp-v2
+        image: javapp.azurecr.io/javapp
+        ports:
+        - name: vproapp
+          containerPort: 8080
+
