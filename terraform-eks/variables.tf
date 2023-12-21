@@ -8,9 +8,9 @@ variable "region" {
 }
 variable "aws_access_key" {
   description = "The AWS access key for authentication."
-  default     = "AKIAXURV5RZ7KO56XIWP"
+  default     = "P"
 }
 variable "aws_secret_key" {
   description = "The AWS secret key for authentication."
-  default     = "dFTTy/+Oaq6QpZGvf+7UIuHbrtHn/SHWVZkavFcz"
+  default     = ""
 }
