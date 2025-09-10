@@ -14,14 +14,14 @@ pipeline {
     }
 
     environment {
-        SNAP_REPO = 'eawangya-snapshot'
+        SNAP_REPO = 'teksystems-snapshot'
         NEXUS_USER = 'admin'
         NEXUS_PASS = 'admin123'
-        RELEASE_REPO = 'eawangya-release'
-        CENTRAL_REPO = 'eawangya-maven-central'
-        NEXUSIP = '192.168.56.18'
+        RELEASE_REPO = 'teksystems-release'
+        CENTRAL_REPO = 'teksystems-maven-central'
+        NEXUSIP = '192.168.0.113'
         NEXUSPORT = '8081'
-        NEXUS_GRP_REPO = 'eawangya-group'
+        NEXUS_GRP_REPO = 'teksystems-maven-group'
         NEXUS_LOGIN = 'nexus-creds'
         SONARSERVER = 'sonarserver'
         SONARSCANNER = 'sonarscanner'
